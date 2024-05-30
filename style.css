@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: black;
+  }
+  
+  /* Stylo del header */
+  .header {
+    background-image: linear-gradient(to bottom, #0aa13c, black);
+    padding: 20px;
+    text-align: center;
+    
+  }
+  .header {
+    display: block;
+    position: sticky;
+    /* top: 0; */
+  }
+  .LOGOP {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  /* Stylo del navigation bar */
+  .topnav {
+    display: flex;
+    overflow: hidden;
+    background-color: #003322;
+  }
+  
+  /* Stylo de los topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Cambio del color hover */
+  .topnav a:hover {
+    background-color: #0aa13c;
+    color: black;
+  }
+  
+  /* Crea tres columnas desiguales que floten una al lado de la otra */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left y right columnas */
+  .column.side {
+    width: 25%;
+  }
+  
+  /*  columna del medio */
+  .column.middle {
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Diseño responsivo: hace que las tres columnas se apilen una encima de la otra en lugar de una al lado de la otra. */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+  
+  /* Stylo del footer */
+  .footer {
+    background-image:linear-gradient(to bottom, black, #0aa13c);
+    padding: 10px;
+    text-align: center;
+
+  }
+  .footer p {
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 20px;
+  }
+  .header p {
+    background-color: rgba(0, 0, 0, 0.719);
+  }
+
+P {
+    color: #f2f2f2;
+    background-color: #161616;
+    padding: 25px;
+}  
+
+H2{
+    color: #0aa13c;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+  opacity: 0.5;
+}
+.container :hover {
+  opacity: 1;
+    transition: opacity 1s;
+}
+.container {
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #ffffff;
+  background-color: #0f42524d;
+  padding-left: 20px;
+  padding-right: 30px;
+  border-radius: 25px;
+}
+/* Create three unequal columns 2 that floats next to each other */
+.column2 {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side2 {
+  background-color: rgb(2, 124, 49);
+  text-align: center;
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle2 {
+  background-color: rgb(57, 0, 71);
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row2::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .column.side2, .column.middle2 {
+    width: 100%;
+  }
+}
+.row2{
+  background-color: rgb(76, 97, 6);
+  position: relative;
+  align-items: baseline;
+}
+.MEDIO {
+  background-color: chocolate;
+}
+
+.header h1 {
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.subtitulo {
+  text-align: center;
+}
+.subtituloc {
+  text-align: center;
+  color: #000000;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes show {
+	from {
+		opacity: 0;
+		scale: 25%;
+	}
+
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
+
+img {
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+
+	animation-range: entry 25% cover 30%;
+	animation-fill-mode: both;
+}
+
+
+.blog {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.blog {
+  opacity: .7;
+  font-size: 18px;
+  font-weight: 400;
+	margin-bottom: 32px;
+}
+
+body {
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: system-ui;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 700px) {
+   .topnav {   
+    flex-direction: column;
+   }
+  }
+
+
+.leyenda{
+  border-radius: 20px;
+}  
+
+.fondocontacto {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.formulario {
+  background-color: #000000e8;
+  text-align: center;
+  align-items: center;
+  margin: 50px;
+  padding: 100px;
+  align-content: center;
+  border-radius: 20px;
+  color: #0aa13c;
+}
+.check {
+  text-align: left;
+  margin-left: 35%;
+  margin-right: 35%;
+  min-width: 150px;
+}
+
+h4{
+  color: #000000;
+}
+.grupo, .grupo p {
+  background-color: #003322;
+  text-align: center;
+  border-radius: 20px;
+}
